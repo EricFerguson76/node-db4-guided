@@ -17,3 +17,39 @@ For the `animals` the client wants to record:
 
 Determine the database tables necessary to track this information.
 Label any relationships between table.
+
+## A good data model (opinion)
+
+- captures ALL the data needed by the system
+- captures ONLY the data needed by the system
+- reflects reality (from the point of view of the system)
+- is flexible (can evolve with the needs of the system)
+- guarantee data integrity (without sacrificing too much performance)
+- is driven by the way we access the data
+
+## Components
+
+- entities (resources): nouns --> tables
+- properties (column, fields, attributes) --> columns
+- relationships --. foreign keys
+
+## Workflow
+
+- identify entities (resources): nouns --> tables
+- identify properties (column, fields, attributes) --> columns
+- identify relationships --. foreign keys
+
+## Relationships
+
+- one to one: rare
+- one to many: This is the most common type
+- many to many: smoke and mirrors, a trick!
+
+## Mantras
+
+- Every table must have a primary key (PK)
+- Concentrate on **two or three** entities at a time
+- _one to many_ realtionship requires a 'Foreign Key'
+- the 'FK' goes on the **many** side
+- Many to many requires a 3rd table
+- The third table can have other columns
